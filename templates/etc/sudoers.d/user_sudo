@@ -1,4 +1,4 @@
-{% if sudo_nopassword == yes %}
+{% if sudo_nopassword == "yes" %}
 {{ user_name }}  ALL=(ALL) NOPASSWD: ALL
 {% else %}
 {{ user_name }}  ALL=(ALL:ALL) ALL
