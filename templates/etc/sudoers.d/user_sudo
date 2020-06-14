@@ -1,5 +1,5 @@
 {% if sudo_nopassword == "yes" %}
-{{ user_name }}  ALL=(ALL) NOPASSWD: ALL
+{{ sudo_user_name }}  ALL=(ALL) NOPASSWD: ALL
 {% else %}
-{{ user_name }}  ALL=(ALL:ALL) ALL
+{{ sudo_user_name }}  ALL=(ALL:ALL) ALL
 {% endif %}
